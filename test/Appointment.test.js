@@ -115,7 +115,7 @@ describe('Appointment', () => {
       stylist={sampleAppointments[0].stylist}
       service={sampleAppointments[0].service}
       notes={sampleAppointments[0].notes}
-      startAt={sampleAppointments[0].startsAt}
+      startsAt={sampleAppointments[0].startsAt}
     />);
     expect(container.querySelector('h4')).not.toBeNull();
     expect(

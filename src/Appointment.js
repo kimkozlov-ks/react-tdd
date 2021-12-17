@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const Appointment = ({ customer, stylist, service, notes, startAt}) => (
+export const Appointment = ({ customer, stylist, service, notes, startsAt}) => (
   <>
-    <h4>{`Today's appointment at ${startAt}`}</h4>
+    <h4>{`Today's appointment at ${startsAt}`}</h4>
     <table>
       <tbody>
         <tr>
