@@ -11,15 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a73e6fe-7929-4d2f-ad84-d72cb9f97e29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/appointments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/appointments.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Appointment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Appointment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Appointment.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/Appointment.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -40,7 +51,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Jest.Appointment">
+  <component name="RunManager" selected="Jest.AppointmentsDayView.renders another appointment when selected">
     <configuration name="Appointment" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -51,6 +62,61 @@
       <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
       <test-names>
         <test-name value="Appointment" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppointmentsDayView" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <test-names>
+        <test-name value="AppointmentsDayView" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppointmentsDayView.has a button element in each li" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <test-names>
+        <test-name value="AppointmentsDayView" />
+        <test-name value="has a button element in each li" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppointmentsDayView.renders another appointment when selected" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <test-names>
+        <test-name value="AppointmentsDayView" />
+        <test-name value="renders another appointment when selected" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AppointmentsDayView.selects the first appointment by default" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <test-names>
+        <test-name value="AppointmentsDayView" />
+        <test-name value="selects the first appointment by default" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -69,7 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.AppointmentsDayView.renders another appointment when selected" />
+        <item itemvalue="Jest.AppointmentsDayView" />
         <item itemvalue="Jest.Appointment" />
+        <item itemvalue="Jest.AppointmentsDayView.has a button element in each li" />
+        <item itemvalue="Jest.AppointmentsDayView.selects the first appointment by default" />
       </list>
     </recent_temporary>
   </component>
@@ -81,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639731270162</updated>
-      <workItem from="1639731271222" duration="1086000" />
+      <workItem from="1639731271222" duration="4072000" />
     </task>
     <servers />
   </component>
@@ -104,21 +174,25 @@
       <screen x="0" y="25" width="2560" height="1355" />
     </state>
     <state x="740" y="354" width="1079" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639731710916" />
-    <state width="2534" height="363" key="GridCell.Tab.0.bottom" timestamp="1639732361023">
+    <state x="991" y="493" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639734886890">
       <screen x="0" y="25" width="2560" height="1355" />
     </state>
-    <state width="2534" height="363" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639732361023" />
-    <state width="2534" height="363" key="GridCell.Tab.0.center" timestamp="1639732361023">
+    <state x="991" y="493" key="#com.intellij.fileTypes.FileTypeChooser/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639734886890" />
+    <state width="2534" height="363" key="GridCell.Tab.0.bottom" timestamp="1639735636063">
       <screen x="0" y="25" width="2560" height="1355" />
     </state>
-    <state width="2534" height="363" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639732361023" />
-    <state width="2534" height="363" key="GridCell.Tab.0.left" timestamp="1639732361023">
+    <state width="2534" height="363" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639735636063" />
+    <state width="2534" height="363" key="GridCell.Tab.0.center" timestamp="1639735636062">
       <screen x="0" y="25" width="2560" height="1355" />
     </state>
-    <state width="2534" height="363" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639732361023" />
-    <state width="2534" height="363" key="GridCell.Tab.0.right" timestamp="1639732361023">
+    <state width="2534" height="363" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639735636062" />
+    <state width="2534" height="363" key="GridCell.Tab.0.left" timestamp="1639735636062">
       <screen x="0" y="25" width="2560" height="1355" />
     </state>
-    <state width="2534" height="363" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639732361023" />
+    <state width="2534" height="363" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639735636062" />
+    <state width="2534" height="363" key="GridCell.Tab.0.right" timestamp="1639735636062">
+      <screen x="0" y="25" width="2560" height="1355" />
+    </state>
+    <state width="2534" height="363" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639735636062" />
   </component>
 </project>
