@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a73e6fe-7929-4d2f-ad84-d72cb9f97e29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/appointments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/appointments.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22PFMwiBgi92MvPUG8ORz9mo8os" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Jest.Appointment">
+    <configuration name="Appointment" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <test-names>
+        <test-name value="Appointment" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Appointment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a73e6fe-7929-4d2f-ad84-d72cb9f97e29" name="Default Changelist" comment="" />
+      <created>1639731270162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639731270162</updated>
+      <workItem from="1639731271222" duration="1086000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="354" width="1079" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639731710916">
+      <screen x="0" y="25" width="2560" height="1355" />
+    </state>
+    <state x="740" y="354" width="1079" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639731710916" />
+    <state width="2534" height="363" key="GridCell.Tab.0.bottom" timestamp="1639732361023">
+      <screen x="0" y="25" width="2560" height="1355" />
+    </state>
+    <state width="2534" height="363" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639732361023" />
+    <state width="2534" height="363" key="GridCell.Tab.0.center" timestamp="1639732361023">
+      <screen x="0" y="25" width="2560" height="1355" />
+    </state>
+    <state width="2534" height="363" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639732361023" />
+    <state width="2534" height="363" key="GridCell.Tab.0.left" timestamp="1639732361023">
+      <screen x="0" y="25" width="2560" height="1355" />
+    </state>
+    <state width="2534" height="363" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639732361023" />
+    <state width="2534" height="363" key="GridCell.Tab.0.right" timestamp="1639732361023">
+      <screen x="0" y="25" width="2560" height="1355" />
+    </state>
+    <state width="2534" height="363" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639732361023" />
+  </component>
+</project>
