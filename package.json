@@ -1,0 +1,22 @@
+{
+  "name": "appointments",
+  "version": "1.0.0",
+  "description": "Appointments system",
+  "main": "test",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimkozlov-ks/react-tdd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimkozlov-ks/react-tdd/issues"
+  },
+  "homepage": "https://github.com/kimkozlov-ks/react-tdd#readme",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
