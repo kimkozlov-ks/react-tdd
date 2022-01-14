@@ -11,11 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a73e6fe-7929-4d2f-ad84-d72cb9f97e29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomerForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Appointment.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/Appointment.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +39,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
-    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v16.13.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/../untitled/node_modules/@types/prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -55,76 +58,76 @@
       <recent name="$PROJECT_DIR$/src/AppointmentsDayView.js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/test/AppointmentsDayView.test.js" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Appointment.renders appointment header with time">
-    <configuration name="Appointment" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.last name field">
+    <configuration name="CustomerForm" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <test-file value="$PROJECT_DIR$/test/CustomerForm.test.js" />
       <test-names>
-        <test-name value="Appointment" />
+        <test-name value="CustomerForm" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Appointment.renders appointment header with time" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerForm.renders a label for the first name field" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <test-file value="$PROJECT_DIR$/test/CustomerForm.test.js" />
       <test-names>
-        <test-name value="Appointment" />
-        <test-name value="renders appointment header with time" />
+        <test-name value="CustomerForm" />
+        <test-name value="renders a label for the first name field" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Appointment.renders notes in the 5th row" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerForm.saves existing first name when submitted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <test-file value="$PROJECT_DIR$/test/CustomerForm.test.js" />
       <test-names>
-        <test-name value="Appointment" />
-        <test-name value="renders notes in the 5th row" />
+        <test-name value="CustomerForm" />
+        <test-name value="saves existing first name when submitted" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Appointment.renders service in the 4th row" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerForm.saves new first name when submitted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <test-file value="$PROJECT_DIR$/test/CustomerForm.test.js" />
       <test-names>
-        <test-name value="Appointment" />
-        <test-name value="renders service in the 4th row" />
+        <test-name value="CustomerForm" />
+        <test-name value="saves new first name when submitted" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Appointment.renders stylist in the second row" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="last name field" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/Appointment.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/CustomerForm.test.js" />
       <test-names>
-        <test-name value="Appointment" />
-        <test-name value="renders stylist in the second row" />
+        <test-name value="last name field" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -143,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Appointment.renders appointment header with time" />
-        <item itemvalue="Jest.Appointment" />
-        <item itemvalue="Jest.Appointment.renders notes in the 5th row" />
-        <item itemvalue="Jest.Appointment.renders service in the 4th row" />
-        <item itemvalue="Jest.Appointment.renders stylist in the second row" />
+        <item itemvalue="Jest.last name field" />
+        <item itemvalue="Jest.CustomerForm" />
+        <item itemvalue="Jest.CustomerForm.renders a label for the first name field" />
+        <item itemvalue="Jest.CustomerForm.saves new first name when submitted" />
+        <item itemvalue="Jest.CustomerForm.saves existing first name when submitted" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +163,10 @@
       <option name="presentableId" value="Default" />
       <updated>1639731270162</updated>
       <workItem from="1639731271222" duration="4072000" />
+      <workItem from="1639984412335" duration="540000" />
+      <workItem from="1640173356901" duration="46000" />
+      <workItem from="1641414211303" duration="42000" />
+      <workItem from="1642149193586" duration="3683000" />
     </task>
     <servers />
   </component>
@@ -176,6 +183,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="354" width="1079" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1639731710916">
@@ -186,57 +194,78 @@
       <screen x="0" y="25" width="2560" height="1355" />
     </state>
     <state x="991" y="493" key="#com.intellij.fileTypes.FileTypeChooser/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639734886890" />
-    <state width="2534" height="362" key="GridCell.Tab.0.bottom" timestamp="1639741201586">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="361" key="GridCell.Tab.0.bottom" timestamp="1642152771303">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="362" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741201586" />
-    <state width="2534" height="363" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639735636063" />
-    <state width="2534" height="362" key="GridCell.Tab.0.center" timestamp="1639741201585">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267172" />
+    <state width="2534" height="362" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252995" />
+    <state width="2534" height="361" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642152771303" />
+    <state width="2534" height="361" key="GridCell.Tab.0.center" timestamp="1642152771303">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="362" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741201585" />
-    <state width="2534" height="363" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639735636062" />
-    <state width="2534" height="362" key="GridCell.Tab.0.left" timestamp="1639741201585">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267170" />
+    <state width="2534" height="362" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252995" />
+    <state width="2534" height="361" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642152771303" />
+    <state width="2534" height="361" key="GridCell.Tab.0.left" timestamp="1642152771303">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="362" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741201585" />
-    <state width="2534" height="363" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639735636062" />
-    <state width="2534" height="362" key="GridCell.Tab.0.right" timestamp="1639741201585">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267170" />
+    <state width="2534" height="362" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252994" />
+    <state width="2534" height="361" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642152771303" />
+    <state width="2534" height="361" key="GridCell.Tab.0.right" timestamp="1642152771303">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="362" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741201585" />
-    <state width="2534" height="363" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639735636062" />
-    <state width="2534" height="447" key="GridCell.Tab.1.bottom" timestamp="1639741076723">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267171" />
+    <state width="2534" height="362" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252995" />
+    <state width="2534" height="361" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642152771303" />
+    <state width="2534" height="448" key="GridCell.Tab.1.bottom" timestamp="1642150584055">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="447" key="GridCell.Tab.1.bottom/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741076723" />
-    <state width="2534" height="447" key="GridCell.Tab.1.center" timestamp="1639741076723">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.1.bottom/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267173" />
+    <state width="2534" height="448" key="GridCell.Tab.1.bottom/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642150584055" />
+    <state width="2534" height="448" key="GridCell.Tab.1.center" timestamp="1642150584055">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="447" key="GridCell.Tab.1.center/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741076723" />
-    <state width="2534" height="447" key="GridCell.Tab.1.left" timestamp="1639741076723">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.1.center/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267173" />
+    <state width="2534" height="448" key="GridCell.Tab.1.center/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642150584055" />
+    <state width="2534" height="448" key="GridCell.Tab.1.left" timestamp="1642150584055">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="447" key="GridCell.Tab.1.left/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741076723" />
-    <state width="2534" height="447" key="GridCell.Tab.1.right" timestamp="1639741076723">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.1.left/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267173" />
+    <state width="2534" height="448" key="GridCell.Tab.1.left/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642150584055" />
+    <state width="2534" height="448" key="GridCell.Tab.1.right" timestamp="1642150584055">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="447" key="GridCell.Tab.1.right/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741076723" />
-    <state width="2534" height="447" key="GridCell.Tab.2.bottom" timestamp="1639741076724">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.1.right/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267173" />
+    <state width="2534" height="448" key="GridCell.Tab.1.right/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642150584055" />
+    <state width="2534" height="448" key="GridCell.Tab.2.bottom" timestamp="1642150584056">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="447" key="GridCell.Tab.2.bottom/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741076724" />
-    <state width="2534" height="447" key="GridCell.Tab.2.center" timestamp="1639741076724">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.2.bottom/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267175" />
+    <state width="2534" height="448" key="GridCell.Tab.2.bottom/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642150584056" />
+    <state width="2534" height="448" key="GridCell.Tab.2.center" timestamp="1642150584056">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="447" key="GridCell.Tab.2.center/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741076724" />
-    <state width="2534" height="447" key="GridCell.Tab.2.left" timestamp="1639741076723">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.2.center/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267174" />
+    <state width="2534" height="448" key="GridCell.Tab.2.center/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642150584056" />
+    <state width="2534" height="448" key="GridCell.Tab.2.left" timestamp="1642150584056">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="447" key="GridCell.Tab.2.left/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741076723" />
-    <state width="2534" height="447" key="GridCell.Tab.2.right" timestamp="1639741076724">
-      <screen x="0" y="25" width="2560" height="1353" />
+    <state width="2534" height="447" key="GridCell.Tab.2.left/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267174" />
+    <state width="2534" height="448" key="GridCell.Tab.2.left/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642150584056" />
+    <state width="2534" height="448" key="GridCell.Tab.2.right" timestamp="1642150584056">
+      <screen x="0" y="25" width="2560" height="1357" />
     </state>
-    <state width="2534" height="447" key="GridCell.Tab.2.right/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639741076724" />
+    <state width="2534" height="447" key="GridCell.Tab.2.right/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267174" />
+    <state width="2534" height="448" key="GridCell.Tab.2.right/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642150584056" />
+    <state x="672" y="251" key="SettingsEditor" timestamp="1642152275740">
+      <screen x="0" y="25" width="2560" height="1357" />
+    </state>
+    <state x="672" y="251" key="SettingsEditor/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414251628" />
+    <state x="672" y="251" key="SettingsEditor/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642152275740" />
+    <state x="780" y="377" key="Vcs.Push.Dialog.v2" timestamp="1642152246195">
+      <screen x="0" y="25" width="2560" height="1357" />
+    </state>
+    <state x="780" y="377" key="Vcs.Push.Dialog.v2/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642152246195" />
   </component>
 </project>
