@@ -12,7 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0a73e6fe-7929-4d2f-ad84-d72cb9f97e29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Appointment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Appointment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppointmentForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppointmentForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TimeSlotTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimeSlotTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/AppointmentForm.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/AppointmentForm.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +66,7 @@
       <recent name="$PROJECT_DIR$/test/AppointmentsDayView.test.js" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.service field">
+  <component name="RunManager" selected="Jest.time slot table.saves new value when submitted">
     <configuration name="last name field" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -118,7 +121,7 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="time slot table.does not render radio buttons for unavailable time slots" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="time slot table.saves new value when submitted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -128,7 +131,7 @@
       <test-file value="$PROJECT_DIR$/test/AppointmentForm.test.js" />
       <test-names>
         <test-name value="time slot table" />
-        <test-name value="does not render radio buttons for unavailable time slots" />
+        <test-name value="saves new value when submitted" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -147,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.time slot table.saves new value when submitted" />
         <item itemvalue="Jest.service field" />
         <item itemvalue="Jest.service field.pre-selects the existing value" />
         <item itemvalue="Jest.last name field" />
         <item itemvalue="Jest.last name field.has a submit button" />
-        <item itemvalue="Jest.time slot table.does not render radio buttons for unavailable time slots" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +170,7 @@
       <workItem from="1639984412335" duration="540000" />
       <workItem from="1640173356901" duration="46000" />
       <workItem from="1641414211303" duration="42000" />
-      <workItem from="1642149193586" duration="11935000" />
+      <workItem from="1642149193586" duration="13286000" />
     </task>
     <servers />
   </component>
@@ -195,30 +198,30 @@
       <screen x="0" y="25" width="2560" height="1355" />
     </state>
     <state x="991" y="493" key="#com.intellij.fileTypes.FileTypeChooser/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639734886890" />
-    <state width="2534" height="448" key="GridCell.Tab.0.bottom" timestamp="1642163515768">
+    <state width="2534" height="361" key="GridCell.Tab.0.bottom" timestamp="1642165193355">
       <screen x="0" y="25" width="2560" height="1357" />
     </state>
     <state width="2534" height="447" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267172" />
     <state width="2534" height="362" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252995" />
-    <state width="2534" height="448" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642163515768" />
-    <state width="2534" height="448" key="GridCell.Tab.0.center" timestamp="1642163515767">
+    <state width="2534" height="361" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642165193355" />
+    <state width="2534" height="361" key="GridCell.Tab.0.center" timestamp="1642165193354">
       <screen x="0" y="25" width="2560" height="1357" />
     </state>
     <state width="2534" height="447" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267170" />
     <state width="2534" height="362" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252995" />
-    <state width="2534" height="448" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642163515767" />
-    <state width="2534" height="448" key="GridCell.Tab.0.left" timestamp="1642163515767">
+    <state width="2534" height="361" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642165193354" />
+    <state width="2534" height="361" key="GridCell.Tab.0.left" timestamp="1642165193354">
       <screen x="0" y="25" width="2560" height="1357" />
     </state>
     <state width="2534" height="447" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267170" />
     <state width="2534" height="362" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252994" />
-    <state width="2534" height="448" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642163515767" />
-    <state width="2534" height="448" key="GridCell.Tab.0.right" timestamp="1642163515767">
+    <state width="2534" height="361" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642165193354" />
+    <state width="2534" height="361" key="GridCell.Tab.0.right" timestamp="1642165193355">
       <screen x="0" y="25" width="2560" height="1357" />
     </state>
     <state width="2534" height="447" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267171" />
     <state width="2534" height="362" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252995" />
-    <state width="2534" height="448" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642163515767" />
+    <state width="2534" height="361" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642165193355" />
     <state width="2534" height="448" key="GridCell.Tab.1.bottom" timestamp="1642163515768">
       <screen x="0" y="25" width="2560" height="1357" />
     </state>
@@ -274,7 +277,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/AppointmentForm.test.js</url>
-          <line>49</line>
+          <line>54</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>

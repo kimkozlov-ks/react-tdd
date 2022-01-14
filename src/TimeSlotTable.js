@@ -1,13 +1,23 @@
 import React from 'react'
 
-export const TimeSlotTable = ({ salonOpensAt, salonClosesAt, today, availableTimeSlots }) => {
+export const TimeSlotTable = ({
+  salonOpensAt,
+  salonClosesAt,
+  today,
+  availableTimeSlots,
+  handleChange,
+  checkedTimeSlot
+}) => {
   const timeSlots = dailyTimeSlots(salonOpensAt, salonClosesAt)
   const dates = weeklyDateValues(today)
 
   const RadioButtonIfAvailable = ({ availableTimeSlots, date, timeSlot }) => {
     const startsAt = mergeDateAndTime(date, timeSlot)
     if (availableTimeSlots.some((availableTimeSlot) => availableTimeSlot.startsAt === startsAt)) {
-      return <input name='startsAt' type='radio' value={startsAt} />
+      const isChecked = startsAt === checkedTimeSlot
+      return (
+        <input name='startsAt' type='radio' value={startsAt} checked={isChecked} readOnly onChange={handleChange} />
+      )
     }
     return null
   }

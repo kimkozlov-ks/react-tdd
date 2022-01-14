@@ -35,7 +35,12 @@ const itAssignsAnIdThatMatchesTheLabelId = (fieldName) =>
 const itSubmitsExistingValue = (fieldName, value) =>
   it('saves existing value when submitted', async () => {
     expect.hasAssertions()
-    render(<AppointmentForm {...{ [fieldName]: value }} onSubmit={(selected) => expect(selected).toEqual(value)} />)
+    render(
+      <AppointmentForm
+        {...{ [fieldName]: value }}
+        onSubmit={(appointment) => expect(appointment.service).toEqual(value)}
+      />
+    )
 
     await ReactTestUtils.Simulate.submit(form('appointment'))
   })
@@ -46,8 +51,8 @@ const itSubmitsNewValue = (fieldName, value) =>
     render(
       <AppointmentForm
         {...{ [fieldName]: 'Blow-dry' }}
-        onSubmit={(selected) => {
-          expect(selected).toEqual(value)
+        onSubmit={(appointment) => {
+          expect(appointment.service).toEqual(value)
         }}
       />
     )
@@ -156,5 +161,26 @@ describe('time slot table', () => {
     render(<AppointmentForm availableTimeSlots={availableTimeSlots} today={today} />)
     expect(startsAtField(0).value).toEqual(availableTimeSlots[0].startsAt.toString())
     expect(startsAtField(1).value).toEqual(availableTimeSlots[1].startsAt.toString())
+  })
+
+  it('saves new value when submitted', () => {
+    expect.hasAssertions()
+    const today = new Date()
+    const availableTimeSlots = [{ startsAt: today.setHours(9, 0, 0, 0) }, { startsAt: today.setHours(9, 30, 0, 0) }]
+    render(
+      <AppointmentForm
+        availableTimeSlots={availableTimeSlots}
+        today={today}
+        startsAt={availableTimeSlots[0].startsAt}
+        onSubmit={({ startsAt }) => expect(startsAt).toEqual(availableTimeSlots[1].startsAt)}
+      />
+    )
+    ReactTestUtils.Simulate.change(startsAtField(1), {
+      target: {
+        value: availableTimeSlots[1].startsAt.toString(),
+        name: 'startsAt'
+      }
+    })
+    ReactTestUtils.Simulate.submit(form('appointment'))
   })
 })

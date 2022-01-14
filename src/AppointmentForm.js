@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useCallback } from 'react'
 import { TimeSlotTable } from './TimeSlotTable'
 export const AppointmentForm = ({
   selectableServices,
@@ -9,12 +9,27 @@ export const AppointmentForm = ({
   today,
   availableTimeSlots
 }) => {
-  const [selected, setSelected] = useState(service)
+  const [appointment, setAppointment] = useState({})
+
+  const handleStartsAtChange = useCallback(
+    ({ target: { value } }) =>
+      setAppointment((appointment) => ({
+        ...appointment,
+        startsAt: parseInt(value)
+      })),
+    []
+  )
 
   return (
-    <form id='appointment' onSubmit={() => onSubmit(selected)}>
+    <form id='appointment' onSubmit={() => onSubmit(appointment)}>
       <label htmlFor={'service'}>Service</label>
-      <select name='service' id='service' value={service} readOnly onChange={(e) => setSelected(e.target.value)}>
+      <select
+        name='service'
+        id='service'
+        value={service}
+        readOnly
+        onChange={(e) => setAppointment((prev) => ({ ...prev, service: e.target.value }))}
+      >
         <option />
         {selectableServices.map((s) => (
           <option value={s} name={s} key={s}>
@@ -27,6 +42,8 @@ export const AppointmentForm = ({
         salonClosesAt={salonClosesAt}
         today={today}
         availableTimeSlots={availableTimeSlots}
+        checkedTimeSlot={appointment.startsAt}
+        handleChange={handleStartsAtChange}
       />
     </form>
   )
