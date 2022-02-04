@@ -50,19 +50,39 @@ const itSubmitsExistingValue = (fieldName, value) =>
     await ReactTestUtils.Simulate.submit(form('customer'))
   })
 
+const spy = () => {
+  let receivedArguments
+  return {
+    fn: (...args) => (receivedArguments = args),
+    receivedArguments: () => receivedArguments,
+    receivedArgument: (n) => receivedArguments[n]
+  }
+}
+
+expect.extend({
+  toHaveBeenCalled(received) {
+    if (received.receivedArguments() === undefined) {
+      return {
+        pass: false,
+        message: () => 'Spy was not called.'
+      }
+    }
+    return { pass: true, message: () => 'Spy was called.' }
+  }
+})
+
 const itSubmitsNewValue = (fieldName, value) =>
   it('saves new value when submitted', async () => {
-    expect.hasAssertions()
-    render(
-      <CustomerForm
-        {...{ [fieldName]: 'existingValue' }}
-        onSubmit={(props) => expect(props[fieldName]).toEqual(value)}
-      />
-    )
+    const submitSpy = spy()
+
+    render(<CustomerForm {...{ [fieldName]: 'existingValue' }} onSubmit={submitSpy.fn} />)
     await ReactTestUtils.Simulate.change(field(fieldName), {
       target: { value: value, name: fieldName }
     })
     await ReactTestUtils.Simulate.submit(form('customer'))
+    expect(submitSpy).toHaveBeenCalled()
+    expect(submitSpy.receivedArguments()).toBeDefined()
+    expect(submitSpy.receivedArgument(0)[fieldName]).toEqual(value)
   })
 
 describe('CustomerForm', () => {
