@@ -1,20 +1,30 @@
 import React, { useState } from 'react'
-export const CustomerForm = ({ firstName, lastName, phoneNumber }) => {
-  const [customer, setCustomer] = useState({ firstName, lastName, phoneNumber })
 
+const Error = () => <div className='error'>An error occurred during save.</div>
+
+export const CustomerForm = ({ firstName, lastName, phoneNumber, onSave }) => {
+  const [customer, setCustomer] = useState({ firstName, lastName, phoneNumber })
+  const [error, setError] = useState(false)
   const handleChange = ({ target }) =>
     setCustomer((customer) => ({
       ...customer,
       [target.name]: target.value
     }))
 
-  const handleSubmit = () => {
-    window.fetch('/customers', {
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const result = await window.fetch('/customers', {
       method: 'POST',
       credentials: 'same-origin',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(customer)
     })
+    if (result.ok) {
+      const customerWithId = await result.json()
+      onSave(customerWithId)
+    } else {
+      setError(true)
+    }
   }
 
   return (
@@ -26,6 +36,11 @@ export const CustomerForm = ({ firstName, lastName, phoneNumber }) => {
       <label htmlFor='phoneNumber'>Phone name</label>
       <input type='text' id='phoneNumber' name='phoneNumber' value={phoneNumber} onChange={handleChange} />
       <input type='submit' value='Add' />
+      {error ? <Error /> : null}
     </form>
   )
+}
+
+CustomerForm.defaultProps = {
+  onSave: () => {}
 }

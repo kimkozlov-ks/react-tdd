@@ -61,7 +61,7 @@
       <recent name="$PROJECT_DIR$/test/AppointmentsDayView.test.js" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.CustomerForm.calls fetch with the right properties when submitting data">
+  <component name="RunManager" selected="Jest.CustomerForm.does not notify onSave if the POST request returns an error">
     <configuration name="CustomerForm.calls fetch with the right properties when submitting data" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -76,57 +76,59 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="last name field" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerForm.does not notify onSave if the POST request returns an error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="SUITE" />
+      <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/test/CustomerForm.test.js" />
       <test-names>
-        <test-name value="last name field" />
+        <test-name value="CustomerForm" />
+        <test-name value="does not notify onSave if the POST request returns an error" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="service field" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/test/AppointmentForm.test.js" />
-      <test-names>
-        <test-name value="service field" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="service field.pre-selects the existing value" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerForm.notifies onSave when form is submitted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/AppointmentForm.test.js" />
+      <test-file value="$PROJECT_DIR$/test/CustomerForm.test.js" />
       <test-names>
-        <test-name value="service field" />
-        <test-name value="pre-selects the existing value" />
+        <test-name value="CustomerForm" />
+        <test-name value="notifies onSave when form is submitted" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="time slot table.saves new value when submitted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerForm.prevents the default action when submitting the form" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/AppointmentForm.test.js" />
+      <test-file value="$PROJECT_DIR$/test/CustomerForm.test.js" />
       <test-names>
-        <test-name value="time slot table" />
-        <test-name value="saves new value when submitted" />
+        <test-name value="CustomerForm" />
+        <test-name value="prevents the default action when submitting the form" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="CustomerForm.renders error message when fetch call fails" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/CustomerForm.test.js" />
+      <test-names>
+        <test-name value="CustomerForm" />
+        <test-name value="renders error message when fetch call fails" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -145,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.CustomerForm.does not notify onSave if the POST request returns an error" />
+        <item itemvalue="Jest.CustomerForm.notifies onSave when form is submitted" />
         <item itemvalue="Jest.CustomerForm.calls fetch with the right properties when submitting data" />
-        <item itemvalue="Jest.time slot table.saves new value when submitted" />
-        <item itemvalue="Jest.service field" />
-        <item itemvalue="Jest.service field.pre-selects the existing value" />
-        <item itemvalue="Jest.last name field" />
+        <item itemvalue="Jest.CustomerForm.prevents the default action when submitting the form" />
+        <item itemvalue="Jest.CustomerForm.renders error message when fetch call fails" />
       </list>
     </recent_temporary>
   </component>
@@ -194,34 +196,34 @@
       <screen x="0" y="25" width="2560" height="1355" />
     </state>
     <state x="991" y="493" key="#com.intellij.fileTypes.FileTypeChooser/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1639734886890" />
-    <state width="2534" height="361" key="GridCell.Tab.0.bottom" timestamp="1643966408431">
+    <state width="2534" height="361" key="GridCell.Tab.0.bottom" timestamp="1643971232257">
       <screen x="0" y="25" width="2560" height="1358" />
     </state>
     <state width="2534" height="447" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267172" />
     <state width="2534" height="362" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252995" />
     <state width="2534" height="448" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642421623245" />
-    <state width="2534" height="361" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1358@0.25.2560.1358" timestamp="1643966408431" />
-    <state width="2534" height="361" key="GridCell.Tab.0.center" timestamp="1643966408430">
+    <state width="2534" height="361" key="GridCell.Tab.0.bottom/2560.108.2048.1152/0.25.2560.1358@0.25.2560.1358" timestamp="1643971232257" />
+    <state width="2534" height="361" key="GridCell.Tab.0.center" timestamp="1643971232256">
       <screen x="0" y="25" width="2560" height="1358" />
     </state>
     <state width="2534" height="447" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267170" />
     <state width="2534" height="362" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252995" />
     <state width="2534" height="448" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642421623243" />
-    <state width="2534" height="361" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1358@0.25.2560.1358" timestamp="1643966408430" />
-    <state width="2534" height="361" key="GridCell.Tab.0.left" timestamp="1643966408430">
+    <state width="2534" height="361" key="GridCell.Tab.0.center/2560.108.2048.1152/0.25.2560.1358@0.25.2560.1358" timestamp="1643971232256" />
+    <state width="2534" height="361" key="GridCell.Tab.0.left" timestamp="1643971232256">
       <screen x="0" y="25" width="2560" height="1358" />
     </state>
     <state width="2534" height="447" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267170" />
     <state width="2534" height="362" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252994" />
     <state width="2534" height="448" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642421623242" />
-    <state width="2534" height="361" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1358@0.25.2560.1358" timestamp="1643966408430" />
-    <state width="2534" height="361" key="GridCell.Tab.0.right" timestamp="1643966408430">
+    <state width="2534" height="361" key="GridCell.Tab.0.left/2560.108.2048.1152/0.25.2560.1358@0.25.2560.1358" timestamp="1643971232256" />
+    <state width="2534" height="361" key="GridCell.Tab.0.right" timestamp="1643971232257">
       <screen x="0" y="25" width="2560" height="1358" />
     </state>
     <state width="2534" height="447" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1353@0.25.2560.1353" timestamp="1639857267171" />
     <state width="2534" height="362" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1355@0.25.2560.1355" timestamp="1641414252995" />
     <state width="2534" height="448" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1357@0.25.2560.1357" timestamp="1642421623243" />
-    <state width="2534" height="361" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1358@0.25.2560.1358" timestamp="1643966408430" />
+    <state width="2534" height="361" key="GridCell.Tab.0.right/2560.108.2048.1152/0.25.2560.1358@0.25.2560.1358" timestamp="1643971232257" />
     <state width="2534" height="448" key="GridCell.Tab.1.bottom" timestamp="1643966363501">
       <screen x="0" y="25" width="2560" height="1358" />
     </state>
@@ -298,7 +300,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/CustomerForm.test.js</url>
-          <line>54</line>
+          <line>53</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
