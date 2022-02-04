@@ -4,6 +4,9 @@ import { CustomerForm } from '../src/CustomerForm'
 import { describe, beforeEach, it } from '@jest/globals'
 import ReactTestUtils from 'react-dom/test-utils'
 
+const originalFetch = window.fetch
+let fetchSpy
+
 const expectToBeInputFieldOfTypeText = (formElement) => {
   expect(formElement).not.toBeNull()
   expect(formElement.tagName).toEqual('INPUT')
@@ -13,6 +16,11 @@ const expectToBeInputFieldOfTypeText = (formElement) => {
 let render, container
 beforeEach(() => {
   ;({ render, container } = createContainer())
+  fetchSpy = spy()
+  window.fetch = fetchSpy.fn
+})
+afterEach(() => {
+  window.fetch = originalFetch
 })
 const form = (id) => container.querySelector(`form[id="${id}"]`)
 const field = (name) => form('customer').elements[name]
@@ -44,7 +52,6 @@ const itAssignsAnIdThatMatchesTheLabelId = (fieldName) =>
 
 const itSubmitsExistingValue = (fieldName, value) =>
   it('saves existing value when submitted', async () => {
-    const fetchSpy = spy()
     render(<CustomerForm {...{ [fieldName]: value }} fetch={fetchSpy.fn} />)
 
     await ReactTestUtils.Simulate.submit(form('customer'))
@@ -76,8 +83,6 @@ expect.extend({
 
 const itSubmitsNewValue = (fieldName, value) =>
   it('saves new value when submitted', async () => {
-    const fetchSpy = spy()
-
     render(<CustomerForm {...{ [fieldName]: 'existingValue' }} fetch={fetchSpy.fn} />)
     await ReactTestUtils.Simulate.change(field(fieldName), {
       target: { value: value, name: fieldName }
@@ -103,7 +108,6 @@ describe('CustomerForm', () => {
   itSubmitsNewValue('firstName', 'firstName')
 
   it('calls fetch with the right properties when submitting data', async () => {
-    const fetchSpy = spy()
     render(<CustomerForm fetch={fetchSpy.fn} />)
     ReactTestUtils.Simulate.submit(form('customer'))
     expect(fetchSpy).toHaveBeenCalled()

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-export const CustomerForm = ({ firstName, lastName, phoneNumber, fetch }) => {
+export const CustomerForm = ({ firstName, lastName, phoneNumber }) => {
   const [customer, setCustomer] = useState({ firstName, lastName, phoneNumber })
 
   const handleChange = ({ target }) =>
@@ -9,7 +9,7 @@ export const CustomerForm = ({ firstName, lastName, phoneNumber, fetch }) => {
     }))
 
   const handleSubmit = () => {
-    fetch('/customers', {
+    window.fetch('/customers', {
       method: 'POST',
       credentials: 'same-origin',
       headers: { 'Content-Type': 'application/json' },
@@ -28,8 +28,4 @@ export const CustomerForm = ({ firstName, lastName, phoneNumber, fetch }) => {
       <input type='submit' value='Add' />
     </form>
   )
-}
-
-CustomerForm.defaultProps = {
-  fetch: async () => {}
 }
