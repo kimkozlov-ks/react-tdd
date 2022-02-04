@@ -3,18 +3,17 @@ import { createContainer } from './domManipulators'
 import { CustomerForm } from '../src/CustomerForm'
 import { describe, beforeEach, it } from '@jest/globals'
 import ReactTestUtils, { act } from 'react-dom/test-utils'
+import { fetchResponseOk, fetchResponseError, requestBodyOf } from './spyHelpers'
 
 const originalFetch = window.fetch
 let fetchSpy
-
-const fetchRequestBody = () => JSON.parse(fetchSpy.mock.calls[0][1].body)
 
 const expectToBeInputFieldOfTypeText = (formElement) => {
   expect(formElement).not.toBeNull()
   expect(formElement.tagName).toEqual('INPUT')
   expect(formElement.type).toEqual('text')
 }
-
+fetchSpy
 let render, container
 beforeEach(() => {
   ;({ render, container } = createContainer())
@@ -58,7 +57,7 @@ const itSubmitsExistingValue = (fieldName, value) =>
 
     await ReactTestUtils.Simulate.submit(form('customer'))
 
-    expect(fetchRequestBody()).toMatchObject({
+    expect(requestBodyOf(fetchSpy)).toMatchObject({
       [fieldName]: value
     })
   })
@@ -77,14 +76,6 @@ const spy = () => {
   }
 }
 
-const fetchResponseOk = (body) =>
-  Promise.resolve({
-    ok: true,
-    json: () => Promise.resolve(body)
-  })
-
-const fetchResponseError = () => Promise.resolve({ ok: false })
-
 const itSubmitsNewValue = (fieldName, value) =>
   it('saves new value when submitted', async () => {
     render(<CustomerForm {...{ [fieldName]: 'existingValue' }} fetch={fetchSpy.fn} />)
@@ -92,7 +83,7 @@ const itSubmitsNewValue = (fieldName, value) =>
       target: { value: value, name: fieldName }
     })
     await ReactTestUtils.Simulate.submit(form('customer'))
-    expect(fetchRequestBody()).toMatchObject({
+    expect(requestBodyOf(fetchSpy)).toMatchObject({
       [fieldName]: value
     })
   })
