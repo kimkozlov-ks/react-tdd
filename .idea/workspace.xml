@@ -300,7 +300,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/CustomerForm.test.js</url>
-          <line>57</line>
+          <line>55</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="19" />
         </line-breakpoint>

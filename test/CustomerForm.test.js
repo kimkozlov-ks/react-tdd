@@ -4,24 +4,20 @@ import { CustomerForm } from '../src/CustomerForm'
 import { describe, beforeEach, it } from '@jest/globals'
 import ReactTestUtils, { act } from 'react-dom/test-utils'
 import { fetchResponseOk, fetchResponseError, requestBodyOf } from './spyHelpers'
-
-const originalFetch = window.fetch
-let fetchSpy
+import 'whatwg-fetch'
 
 const expectToBeInputFieldOfTypeText = (formElement) => {
   expect(formElement).not.toBeNull()
   expect(formElement.tagName).toEqual('INPUT')
   expect(formElement.type).toEqual('text')
 }
-fetchSpy
 let render, container
 beforeEach(() => {
   ;({ render, container } = createContainer())
-  fetchSpy = jest.fn(() => fetchResponseOk({}))
-  window.fetch = fetchSpy
+  jest.spyOn(window, 'fetch').mockReturnValue(fetchResponseOk({}))
 })
 afterEach(() => {
-  window.fetch = originalFetch
+  window.fetch.mockRestore()
 })
 const form = (id) => container.querySelector(`form[id="${id}"]`)
 const field = (name) => form('customer').elements[name]
@@ -53,37 +49,23 @@ const itAssignsAnIdThatMatchesTheLabelId = (fieldName) =>
 
 const itSubmitsExistingValue = (fieldName, value) =>
   it('saves existing value when submitted', async () => {
-    render(<CustomerForm {...{ [fieldName]: value }} fetch={fetchSpy.fn} />)
+    render(<CustomerForm {...{ [fieldName]: value }} fetch={window.fetch.fn} />)
 
     await ReactTestUtils.Simulate.submit(form('customer'))
 
-    expect(requestBodyOf(fetchSpy)).toMatchObject({
+    expect(requestBodyOf(window.fetch)).toMatchObject({
       [fieldName]: value
     })
   })
 
-const spy = () => {
-  let returnValue
-  let receivedArguments
-  return {
-    fn: (...args) => {
-      receivedArguments = args
-      return returnValue
-    },
-    receivedArguments: () => receivedArguments,
-    receivedArgument: (n) => receivedArguments[n],
-    mockReturnValue: (value) => (returnValue = value)
-  }
-}
-
 const itSubmitsNewValue = (fieldName, value) =>
   it('saves new value when submitted', async () => {
-    render(<CustomerForm {...{ [fieldName]: 'existingValue' }} fetch={fetchSpy.fn} />)
+    render(<CustomerForm {...{ [fieldName]: 'existingValue' }} fetch={window.fetch.fn} />)
     await ReactTestUtils.Simulate.change(field(fieldName), {
       target: { value: value, name: fieldName }
     })
     await ReactTestUtils.Simulate.submit(form('customer'))
-    expect(requestBodyOf(fetchSpy)).toMatchObject({
+    expect(requestBodyOf(window.fetch)).toMatchObject({
       [fieldName]: value
     })
   })
@@ -104,9 +86,9 @@ describe('CustomerForm', () => {
   itSubmitsNewValue('firstName', 'firstName')
 
   it('calls fetch with the right properties when submitting data', async () => {
-    render(<CustomerForm fetch={fetchSpy.fn} />)
+    render(<CustomerForm fetch={window.fetch.fn} />)
     ReactTestUtils.Simulate.submit(form('customer'))
-    expect(fetchSpy).toHaveBeenCalledWith(
+    expect(window.fetch).toHaveBeenCalledWith(
       '/customers',
       expect.objectContaining({
         method: 'POST',
@@ -118,7 +100,7 @@ describe('CustomerForm', () => {
 
   it('notifies onSave when form is submitted', async () => {
     const customer = { id: 123 }
-    fetchSpy.mockReturnValue(fetchResponseOk(customer))
+    window.fetch.mockReturnValue(fetchResponseOk(customer))
     const saveSpy = jest.fn()
     render(<CustomerForm onSave={saveSpy} />)
     await act(async () => {
@@ -128,7 +110,7 @@ describe('CustomerForm', () => {
   })
 
   it('does not notify onSave if the POST request returns an error', async () => {
-    fetchSpy.mockReturnValue(fetchResponseError())
+    window.fetch.mockReturnValue(fetchResponseError())
     const saveSpy = jest.fn()
     render(<CustomerForm onSave={saveSpy} />)
     await act(async () => {
@@ -149,7 +131,7 @@ describe('CustomerForm', () => {
   })
 
   it('renders error message when fetch call fails', async () => {
-    fetchSpy.mockReturnValue(Promise.resolve({ ok: false }))
+    window.fetch.mockReturnValue(Promise.resolve({ ok: false }))
     render(<CustomerForm />)
     await act(async () => {
       ReactTestUtils.Simulate.submit(form('customer'))
